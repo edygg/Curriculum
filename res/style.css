@@ -19,6 +19,10 @@ h3 {
     font-weight: bold;
 }
 
+hr {
+    margin: 2px;
+}
+
 a:link {text-decoration:none;}
 a:visited {text-decoration:none;}
 a:hover {text-decoration:underline;}
@@ -59,6 +63,10 @@ a:active {text-decoration:underline;}
     text-align: center;
 }
 
+a > button {
+    margin: 2px;
+}
+
 #perso-info {
     background:
     radial-gradient(#033E6B 15%, transparent 16%) 0 0,
@@ -71,8 +79,8 @@ a:active {text-decoration:underline;}
 
 /* Transiciones */
 a[ id="perso-info" ]:target ~ #main-section article.panel {
-    -webkit-transform: translateY( 50px );
-    transform: translateY( 50px );
+    -webkit-transform: translateY( 0px );
+    transform: translateY( 0px );
 }
 
 a[ id="seccion2" ]:target ~ #main-section article.panel {
