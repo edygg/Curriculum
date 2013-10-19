@@ -1,18 +1,33 @@
-body {
-	padding-top: 70px;
-}
-
-h2 {
-	text-align: center;
-}
-
 html, body {
-    height: 100%; /* IMPORTANT!!! stretches viewport to 100% */
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.big-div {
-    min-height: 100%; /* min. height for modern browser */
-    height:auto !important; /* important rule for modern Browser */
-    height:100%; /* min. height for IE */
-    overflow: hidden !important; /* FF scroll-bar */
+body {
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.panel {
+    width: 100%;
+    height: 600px;
+    z-index: 0;
+
+    -webkit-transform: translate>( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+a[ id="seccion1" ]:target ~ #main-section article.panel {
+    -webkit-transform: translateY( 50px );
+    transform: translateY( 50px );
+}
+
+a[ id="seccion2" ]:target ~ #main-section article.panel {
+    -webkit-transform: translateY( -550px );
+    transform: translateY( -550px );
 }
