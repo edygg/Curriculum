@@ -67,6 +67,22 @@ a > button {
     margin: 2px;
 }
 
+.info-icon {
+    margin: 10px;   
+}
+
+.info-section {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.info-section > div > p {
+    font-size: 1.2em;
+    color: #42036F;
+}
+
 #perso-info {
     background:
     radial-gradient(#033E6B 15%, transparent 16%) 0 0,
