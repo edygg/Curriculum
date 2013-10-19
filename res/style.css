@@ -1,3 +1,5 @@
+/* Diseño General del documento */
+
 html, body {
     width: 100%;
     height: 100%;
@@ -9,10 +11,26 @@ body {
     overflow: hidden;
 }
 
+h1, h2, h3 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+/* Clases */
+
+.thumbnail {
+    background: rgba(255, 255, 255, 0.7);
+}
+
 .panel {
     width: 100%;
-    height: 600px;
+    height: 590px;
     z-index: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
 
     -webkit-transform: translateZ( 0 );
     transform: translateZ( 0 );
@@ -22,7 +40,26 @@ body {
     backface-visibility: hidden;
 }
 
-a[ id="seccion1" ]:target ~ #main-section article.panel {
+/* Elementos individuales */
+.container > article {
+    background: rgba(255, 255, 255, 0.7);
+    float: right;
+}
+
+.caption {
+    text-align: center;
+}
+.caption > p {
+    font-size: 0.6em;
+    text-align: center;
+}
+
+#perso-info {
+    background-color: #3B839A;
+}
+
+/* Transiciones */
+a[ id="perso-info" ]:target ~ #main-section article.panel {
     -webkit-transform: translateY( 50px );
     transform: translateY( 50px );
 }
