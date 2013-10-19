@@ -19,6 +19,11 @@ h3 {
     font-weight: bold;
 }
 
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
 /* Clases */
 
 .thumbnail {
@@ -55,7 +60,13 @@ h3 {
 }
 
 #perso-info {
-    background-color: #3B839A;
+    background:
+    radial-gradient(#033E6B 15%, transparent 16%) 0 0,
+    radial-gradient(#033E6B 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#0B61A4;
+    background-size:16px 16px;
 }
 
 /* Transiciones */
