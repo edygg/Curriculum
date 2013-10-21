@@ -91,6 +91,10 @@ a > button {
     font-weight: 100;
 }
 
+.instituto {
+    margin-top: 25px;
+}
+
 #perso-info {
     background:
     radial-gradient(#006363 15%, transparent 16%) 0 0,
@@ -138,6 +142,21 @@ a > button {
     text-align: center;
     font-size: 4em;
     font-weight: bold;
+}
+
+#mary-leonard {
+    height: 350px;
+    width: auto;
+}
+
+#taular {
+    height: 350px;
+    width: auto;
+}
+
+#unitec {
+    height: 325px;
+    width: auto;
 }
 
 /* Transiciones */
