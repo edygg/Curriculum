@@ -119,7 +119,7 @@ a > button {
     background-color: #fff; 
     background-image: 
     linear-gradient(90deg, transparent 79px, #ED6C7B 79px, #eee 81px, transparent 81px),
-    linear-gradient(#eee .1em, transparent .1em);
+    linear-gradient(#C3B7F9 .2em, transparent .1em);
     background-size: 100% 2em;
 }
 
@@ -145,16 +145,19 @@ a > button {
 }
 
 #mary-leonard {
+    margin-top: 25px;
     height: 350px;
     width: auto;
 }
 
 #taular {
+    margin-top: 25px;
     height: 350px;
     width: auto;
 }
 
 #unitec {
+    margin-top: 25px;
     height: 325px;
     width: auto;
 }
