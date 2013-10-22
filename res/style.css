@@ -11,7 +11,7 @@ body {
     overflow: hidden !important;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     text-align: center;
 }
 
@@ -95,6 +95,15 @@ a > button {
     margin-top: 25px;
 }
 
+.list-group, .list-group-item {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.list-group-item > h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 #perso-info {
     background:
     radial-gradient(#006363 15%, transparent 16%) 0 0,
@@ -133,6 +142,8 @@ a > button {
     linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
     background-size:80px 140px;
     background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+
+    padding-top: 140px;
 }
 
 #acerca-de {
@@ -158,8 +169,27 @@ a > button {
 
 #unitec {
     margin-top: 25px;
-    height: 325px;
+    height: 310px;
     width: auto;
+}
+
+#maletin {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#detalle-experiencia {
+    margin-top: 120px;
+}
+
+#cisco {
+    padding: 15px;
+    width: 365px;
+    height: auto;
+}
+
+#family-search {
+    padding: 50px;
 }
 
 /* Transiciones */
@@ -169,8 +199,8 @@ a[ id="perso-info" ]:target ~ #main-section article.panel {
 }
 
 a[ id="experiencia-laboral" ]:target ~ #main-section article.panel {
-    -webkit-transform: translateY( -550px );
-    transform: translateY( -550px );
+    -webkit-transform: translateY( -530px );
+    transform: translateY( -530px );
 }
 
 a[ id="formacion-academica" ]:target ~ #main-section article.panel {
