@@ -1,0 +1,219 @@
+/* Diseño General del documento */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    padding-top: 50px;
+    overflow: hidden !important;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+hr {
+    margin: 2px;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+/* Clases */
+
+.thumbnail {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.panel {
+    width: 100%;
+    height: 590px;
+    z-index: 0;
+    margin: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Elementos individuales */
+.container > article {
+    background: rgba(255, 255, 255, 0.7);
+    float: right;
+}
+
+.caption {
+    text-align: center;
+}
+.caption > p {
+    font-size: 0.6em;
+    text-align: center;
+}
+
+a > button {
+    margin: 2px;
+}
+
+.info-icon {
+    margin: 10px;
+    color: #4C10AE;   
+}
+
+.info-section {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.info-section > div > p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer-icon {
+    font-size: 300px;
+    margin: 30px;
+    font-weight: 100;
+}
+
+.instituto {
+    margin-top: 25px;
+}
+
+.list-group, .list-group-item {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.list-group-item > h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#perso-info {
+    background:
+    radial-gradient(#006363 15%, transparent 16%) 0 0,
+    radial-gradient(#006363 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#009999;
+    background-size:16px 16px;
+}
+
+#experiencia-laboral {
+   background-color:#269;
+   background-image: linear-gradient(white 2px, transparent 2px),
+   linear-gradient(90deg, white 2px, transparent 2px),
+   linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+   linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+   background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+   background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+#formacion-academica {
+    background-color: #fff; 
+    background-image: 
+    linear-gradient(90deg, transparent 79px, #ED6C7B 79px, #eee 81px, transparent 81px),
+    linear-gradient(#C3B7F9 .2em, transparent .1em);
+    background-size: 100% 2em;
+}
+
+#cursos-capacitaciones {
+    background-color:#556;
+    background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+    linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size:80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+
+    padding-top: 140px;
+}
+
+#acerca-de {
+    z-index: 0;
+    background-color: #9A2331;
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#mary-leonard {
+    margin-top: 25px;
+    height: 350px;
+    width: auto;
+}
+
+#taular {
+    margin-top: 25px;
+    height: 350px;
+    width: auto;
+}
+
+#unitec {
+    margin-top: 25px;
+    height: 310px;
+    width: auto;
+}
+
+#maletin {
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+#detalle-experiencia {
+    margin-top: 120px;
+}
+
+#cisco {
+    padding: 15px;
+    width: 365px;
+    height: auto;
+}
+
+#family-search {
+    padding: 50px;
+}
+
+/* Transiciones */
+a[ id="perso-info" ]:target ~ #main-section article.panel {
+    -webkit-transform: translateY( 50px );
+    transform: translateY( 50px );
+}
+
+a[ id="experiencia-laboral" ]:target ~ #main-section article.panel {
+    -webkit-transform: translateY( -530px );
+    transform: translateY( -530px );
+}
+
+a[ id="formacion-academica" ]:target ~ #main-section article.panel {
+    -webkit-transform: translateY( -1125px );
+    transform: translateY( -1125px );
+}
+
+a[ id="cursos-capacitaciones" ]:target ~ #main-section article.panel {
+    -webkit-transform: translateY( -1715px );
+    transform: translateY( -1715px );
+}
+
+a[ id="acerca-de" ]:target ~ #main-section article.panel {
+    -webkit-transform: translateY( -2305px );
+    transform: translateY( -2305px );
+}
